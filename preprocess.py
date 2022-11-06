@@ -12,6 +12,9 @@ import matplotlib.pyplot as plt
 
 import warnings
 warnings.filterwarnings("ignore")
+import torch
+import torch.nn as nn
+from torch.utils.data import DataLoader
 
 
 class BuildingsDataset(torch.utils.data.Dataset):
