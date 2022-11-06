@@ -9,14 +9,9 @@ import pandas as pd
 import random, tqdm
 import seaborn as sns
 import matplotlib.pyplot as plt
-%matplotlib inline
 
 import warnings
 warnings.filterwarnings("ignore")
-
-import torch
-import torch.nn as nn
-from torch.utils.data import DataLoader
 
 
 class BuildingsDataset(torch.utils.data.Dataset):
@@ -74,7 +69,7 @@ class BuildingsDataset(torch.utils.data.Dataset):
     def __len__(self):
         # return length of 
         return len(self.image_paths)
-        
+
 
 def get_training_augmentation():
     train_transform = [    
